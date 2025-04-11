@@ -12,11 +12,12 @@ import com.jme3.scene.Geometry;
  * <<add additional contributors (mentors, tutors, friends) here, with contact information>>
  * 
  * References:
- *  
+ * “JMonkeyEngine Docs.” jMonkeyEngine Docs, wiki.jmonkeyengine.org/docs/3.4/tutorials/beginner/hello_simpleapplication.html. Accessed 11 Apr. 2025.  
+ * 
  * Version/date: V1
  * 
  * Responsibilities of class:
- * To define all fields and methods needed by subclasses
+ * To define logic regarding shapes in the simulation
  */
 public abstract class Shape 
 {
