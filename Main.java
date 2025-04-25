@@ -51,8 +51,12 @@ public class Main extends SimpleApplication
     @Override
     public void simpleInitApp()
     {    
-        //Create the Material
+        //Create the Materials
         MaterialProperty aluminum = new MaterialProperty("Aluminum", 0.47, ColorRGBA.Blue);
+        MaterialProperty wood = new MaterialProperty("Wood", 0.82, ColorRGBA.Brown);
+        MaterialProperty mesh = new MaterialProperty("Mesh", 1.6, ColorRGBA.Gray);
+        MaterialProperty foam = new MaterialProperty("Foam", 1.2, ColorRGBA.Orange);
+        MaterialProperty carbonFiber = new MaterialProperty("Carbon Fiber", 1.28, ColorRGBA.DarkGray);
         
         //Create the 3D sphere
         Shape sphere = new Sphere(0.1, aluminum, assetManager);
