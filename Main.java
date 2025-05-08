@@ -1,15 +1,15 @@
 package mygame;
 import com.jme3.app.SimpleApplication;
 import com.jme3.light.DirectionalLight;
-import com.jme3.material.Material;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.Vector3f;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
-import com.jme3.scene.shape.Line;
+import com.simsilica.lemur.GuiGlobals;
 import java.util.ArrayList;
 import java.util.HashMap;
+import com.simsilica.lemur.style.BaseStyles;
 
 /**
  * Lead Author(s):
@@ -78,7 +78,11 @@ public class Main extends SimpleApplication
         //Build Particles
         Particle.buildParticles(assetManager, particleNode, particles, originalOffsets, xStart, gridY, gridZ, spacing);
         
+        //Add the GUI
+        GuiGlobals.initialize(this);
+        BaseStyles.loadGlassStyle();
         
+        ControlPanelGUI gui = new ControlPanelGUI(guiNode, cam);
               
         //Add lighting
         DirectionalLight sun = new DirectionalLight();
